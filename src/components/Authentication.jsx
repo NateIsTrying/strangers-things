@@ -12,8 +12,8 @@ const Authentication = ({setAuthToken}) => {
                 },
                 body: JSON.stringify({
                     user:{
-                        username: 'captainCaveman',
-                        password: 'password',
+                        username: 'jamesBond',
+                        password: 'govTool007',
                     }
                 })
             });

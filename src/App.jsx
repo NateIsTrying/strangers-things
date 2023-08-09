@@ -32,10 +32,10 @@ const [authToken, setAuthToken] = useState(null)
       <h2>Well Hello There!</h2>
       {authToken && <h4> This is your token: {authToken}</h4>}
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<HomePage setAuthToken={setAuthToken} />} />
         <Route path='/authTest' element={<Authentication setAuthToken={setAuthToken} />} />
         <Route path='/posts' element={<PostsPage />} />
-        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/profile' element={<ProfilePage authToken={authToken}/>} />
       </Routes>
     </>
   )
